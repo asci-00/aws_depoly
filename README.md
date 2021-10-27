@@ -1,70 +1,34 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## <img align="left" src="https://github.com/asci-00/aws_depoly/blob/main/public/awsicon.png" height="50" alt="aws icon"/> AWS를 사용한 CI/CD 
 
-In the project directory, you can run:
+React 기반 프로젝트 + 형상관리프로그램 (Git) + 배포 서버(AWS 기본제공) + Amplify 서비스(AWS)
 
-### `npm start`
+기반에서 CI/CD 구현하기
+### CI/CD란?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* CI : 개발자를 위한 자동화 프로세스인 지속적인 통합(Continuous Integration)을 의미
+  > 애플리케이션에 대한 새로운 코드 변경 사항이 정기적으로 빌드 및 테스트되어 공유 리포지토리에 통합되므로 여러 명의 개발자가 동시에 애플리케이션 개발과 관련된 코드 작업을 할 경우 서로 충돌할 수 있는 문제를 해결
+* CD : 지속적인 서비스 제공(Continuous Delivery) 및/또는 지속적인 배포(Continuous Deployment)를 의미
+<h3>:memo: 단계</h3>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[ 1. React-app 만들기 ]
+<pre>Create-react-app을 통해 기본적인 리액트 웹앱 생성</pre>
 
-### `npm test`
+[ 2. Repository 만들기 & React-app 소스코드 업로드 ]
+<pre>소스코드 형상관리를 위한 Git Repository 생성 및 React 코드 업로드</pre>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[ 3. AWS Amplify 설정 ]
+<pre>
+1. AWS Amplify 콘솔을 통해 해당 GIt Repository 연결
+2. 빌드 설정& 저장 및 배포
+3. 제공된 테스트용 배포서버 확인 (https://branch_name.app_id.amplifyapp.com)
+</pre>
 
-### `npm run build`
+[ 4. 확인 ]
+<pre>
+1. Local Storage 에서 개발 후, Git Repository에 업로드
+2. AWS Amplify 콘솔에서 빌드 과정 확인
+3. 배포 완료시, 배포서버의 변경사항 적용 확인
+</pre>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
